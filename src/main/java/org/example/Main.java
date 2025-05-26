@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
  /*
@@ -61,6 +63,7 @@ public class Main {
         System.out.println("Object3 age: " + object3.age+ " and message: " + object3.message);
 */
         /*---------------METHODS---------------- */
+        /*
         Calculator calculator = new Calculator();
         calculator.firstNumber=10;
         calculator.secondNumber=8;
@@ -86,7 +89,21 @@ public class Main {
         //Static methods can be called without creating an object of the class
         int sumStatic = Calculator.addStatic(10, 20);
         System.out.println("Sum using static method: " + sumStatic);
+*/
+        /*---------------WRAPPER CLASSES---------------- */
 
+        Scanner obj = new Scanner(System.in);
+        System.out.println("enter your age");
+        int age = obj.nextInt();
+
+        //Wrapper class Integer
+        Integer ageObject = age; //autoboxing
+        int age2 = ageObject; //unboxing
+        int age3 = ageObject.intValue(); //unboxing using intValue method
+
+        System.out.println("Your age is: " + ageObject);
+        System.out.println("Your age is: " + age2);
+        System.out.println("Your age is: " + age3);
     }
 
 }
