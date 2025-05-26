@@ -2,9 +2,9 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-
+ /*
         //Variable types
-        //local variablesa
+        //local variables
         //Primitive variables
         int length = 10;
         short height = 5;
@@ -44,7 +44,27 @@ public class Main {
         System.out.println(testObject1.age);
         System.out.println(testObject1.height);
 
+*/
+        /*---------------CLASSES AND OBJECTS---------------- */
+
+        //Creating an object of a class
+        //Java provides a default constructor.
+        FirstClass object1 = new FirstClass();
+        object1.age=10;
+        System.out.println("Object1 age: " + object1.age);
+        FirstClass object2 = new FirstClass(20);
+        //all instances variable is initialized with some value
+        //non-primitive variables are initialized with null
+        //primitive variables are initialized with 0
+        System.out.println("Object2 age: " + object2.age+ " and message: " + object2.message);
+        FirstClass object3 = new FirstClass(30,"Hello");
+        System.out.println("Object3 age: " + object3.age+ " and message: " + object3.message);
+
+        /*---------------METHODS---------------- */
+
+
     }
+
 }
 
 class  Test{
