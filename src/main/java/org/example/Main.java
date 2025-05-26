@@ -91,7 +91,7 @@ public class Main {
         System.out.println("Sum using static method: " + sumStatic);
 */
         /*---------------WRAPPER CLASSES---------------- */
-
+/*
         Scanner obj = new Scanner(System.in);
         System.out.println("enter your age");
         int age = obj.nextInt();
@@ -104,6 +104,30 @@ public class Main {
         System.out.println("Your age is: " + ageObject);
         System.out.println("Your age is: " + age2);
         System.out.println("Your age is: " + age3);
+ */
+        /*---------------IF / ELSE---------------- */
+
+        Scanner obj = new Scanner(System.in);
+        System.out.println("enter your age");
+        int age = obj.nextInt();
+
+        if (age>18) {
+            System.out.println("You are an adult");
+
+            //Nested if statement
+            if (age>60) {
+                System.out.println("You are a senior citizen");
+            }else {
+                System.out.println("You are a young adult");
+            }
+        } else if (age>12 && age<=18) {
+            System.out.println("You are a teenager");
+        } else if (age>0 && age<=12) {
+            System.out.println("You are a child");
+        } else {
+            System.out.println("Invalid age");
+        }
+
     }
 
 }
