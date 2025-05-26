@@ -46,7 +46,7 @@ public class Main {
 
 */
         /*---------------CLASSES AND OBJECTS---------------- */
-
+/*
         //Creating an object of a class
         //Java provides a default constructor.
         FirstClass object1 = new FirstClass();
@@ -59,9 +59,33 @@ public class Main {
         System.out.println("Object2 age: " + object2.age+ " and message: " + object2.message);
         FirstClass object3 = new FirstClass(30,"Hello");
         System.out.println("Object3 age: " + object3.age+ " and message: " + object3.message);
-
+*/
         /*---------------METHODS---------------- */
+        Calculator calculator = new Calculator();
+        calculator.firstNumber=10;
+        calculator.secondNumber=8;
+        int sumOfCalculator = calculator.add() ;
+        System.out.println(sumOfCalculator);
 
+        Calculator calculator1 = new Calculator();
+        calculator1.firstNumber=20;
+        calculator1.secondNumber=7;
+        int sumOfCalculator1 = calculator1.add() ;
+        System.out.println(sumOfCalculator1);
+
+        Calculator calculator2 = new Calculator();
+        int sum2 = calculator2.add1(20,5) ;
+        System.out.println(sum2);
+
+        Calculator calculator3 = new Calculator();
+        calculator3.firstNumber=15;
+        int sum3 = calculator3.add2(5) ;
+        System.out.println(sum3);
+
+        //Static methods
+        //Static methods can be called without creating an object of the class
+        int sumStatic = Calculator.addStatic(10, 20);
+        System.out.println("Sum using static method: " + sumStatic);
 
     }
 
