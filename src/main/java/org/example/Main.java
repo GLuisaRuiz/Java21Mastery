@@ -130,7 +130,7 @@ public class Main {
 
  */
         /*---------------SWITCH STATEMENT---------------- */
-
+/*
         Scanner obj = new Scanner(System.in);
         System.out.println("enter day number ");
         int noOfday = obj.nextInt();
@@ -142,7 +142,26 @@ public class Main {
             default ->"Error";
         };
         System.out.println(day);
+*/
 
+        /*---------------ARRAYS---------------- */
+
+        String [][] fruits = {{"mango", "apple"}, {"banana", "orange","berry"}};
+        int [] weekNumbers = {1,2,3,4,5,6,7};
+        int lengthOfFruits = fruits.length;
+
+        System.out.println("Length of fruits array: " + lengthOfFruits);
+
+        String fruit1 [] = fruits[0];
+        System.out.println(fruit1[0]);
+        System.out.println(fruits[1][0]);
+        System.out.println(fruits[1].length);
+
+        /*---------------XXXX---------------- */
+
+
+
+        /*---------------XXXXX---------------- */
     }
 
 }
