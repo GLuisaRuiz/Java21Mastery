@@ -106,7 +106,7 @@ public class Main {
         System.out.println("Your age is: " + age3);
  */
         /*---------------IF / ELSE---------------- */
-
+/*
         Scanner obj = new Scanner(System.in);
         System.out.println("enter your age");
         int age = obj.nextInt();
@@ -127,6 +127,21 @@ public class Main {
         } else {
             System.out.println("Invalid age");
         }
+
+ */
+        /*---------------SWITCH STATEMENT---------------- */
+
+        Scanner obj = new Scanner(System.in);
+        System.out.println("enter day number ");
+        int noOfday = obj.nextInt();
+
+        String day = switch (noOfday){
+            case 1,7 -> //Multiple cases can be combined
+                "weekend";
+            case 2,3,4,5,6 -> "weekday";
+            default ->"Error";
+        };
+        System.out.println(day);
 
     }
 
