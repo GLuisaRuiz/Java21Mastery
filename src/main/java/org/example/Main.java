@@ -145,7 +145,7 @@ public class Main {
 */
 
         /*---------------ARRAYS---------------- */
-
+/*
         String [][] fruits = {{"mango", "apple"}, {"banana", "orange","berry"}};
         int [] weekNumbers = {1,2,3,4,5,6,7};
         int lengthOfFruits = fruits.length;
@@ -156,10 +156,39 @@ public class Main {
         System.out.println(fruit1[0]);
         System.out.println(fruits[1][0]);
         System.out.println(fruits[1].length);
+*/
+        /*---------------LOOPS---------------- */
 
-        /*---------------XXXX---------------- */
+        //WHILE LOOP
+        int index = 0;
+        String [] fruits = {"mango", "apple","banana", "orange","berry"};
+        int length = fruits.length;
+        while(length>index){
+            System.out.println("The value of fruit arrray is: " +fruits[index]);
+            index++;
+        }
+        System.out.println("I am outside while loop");
 
+        //DO WHILE LOOP
+        int var = 0;
+        do {
+            System.out.println("The value of fruit arrray is: " +fruits[var]);
+            var++;
+        }while(length>var);
 
+        //FOR LOOP
+        System.out.println("This is For loop" );
+        for (int i=0; i < length; i++) {
+            System.out.println("The value of fruit arrray is: " +fruits[i]);
+        }
+        System.out.println("I am outside loop" );
+
+        //FOR EACH LOOP
+
+        for(String fruit : fruits) {
+            System.out.println("The value of fruit arrray is: " + fruit);
+        }
+        System.out.println("I am outside for each loop" );
 
         /*---------------XXXXX---------------- */
     }
