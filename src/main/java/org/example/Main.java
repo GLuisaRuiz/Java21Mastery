@@ -1,5 +1,12 @@
 package org.example;
 
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.Period;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.util.Scanner;
 
 public class Main {
@@ -270,6 +277,7 @@ public class Main {
  */
 
         /*---------------VAR key word---------------- */
+        /*
         //The var keyword was introduced in Java 10 and allows you to declare a variable without specifying its type.
 
         var name = "Luisa"; // The var keyword infers the type of the variable is String based on the assigned value
@@ -278,6 +286,44 @@ public class Main {
 
         System.out.println(name.contains("is"));// Output: true, var keyword infers the type of the variable based on the assigned value
 
+         */
+
+        /*----------------DATE TIME API--------------- */
+
+        LocalDate date = LocalDate.of(2023, 10, 1 );// Year, Month, Day
+        System.out.println(date); // Output: 2023-10-01
+        System.out.println(date.minusDays(2)); // Output: 2023-09-29,
+        LocalTime time1 = LocalTime.of(10, 30); // Hour, Minute
+        System.out.println(time1); // Output: 10:30
+        LocalTime time2 = LocalTime.of(10, 30, 45); // Hour, Minute, Second
+        System.out.println(time2); // Output: 10:30:45
+
+        LocalDateTime dateTime = LocalDateTime.of(date,time1);
+        System.out.println(dateTime); // Output: 2023-10-01T10:30
+
+        ZoneId zone = ZoneId.of("America/New_York");
+        ZonedDateTime zonedDateTime = ZonedDateTime.of(dateTime, zone);
+        System.out.println(zonedDateTime); // Output: 2023-10-01T10:30-04:00[America/New_York]
+
+        Duration duration = Duration.ofMinutes(30);
+        //PT = Period of Time
+        System.out.println(duration); // Output: PT30M, Duration represents a time-based amount of time, such as '30 minutes'
+        Duration duration1 = Duration.between(time1,time2);
+        System.out.println(duration1);// Output: PT0H0M45S, Duration represents the difference between two time points
+
+        Period period = Period.ofDays(5);
+        System.out.println(period);
+
+
+
+
+        /*---------------VAR key word---------------- */
+
+        /*---------------VAR key word---------------- */
+
+        /*---------------VAR key word---------------- */
+
+        /*---------------VAR key word---------------- */
 
 
 
