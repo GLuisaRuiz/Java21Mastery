@@ -17,4 +17,10 @@ public class Student {
         teacher.setTeacher("Smith", "smith@ola.com");
         return teacher;
     }
+    /*
+    public void setStudent(var studentId, String name) { // Using var for parameter type is not recommended, use Integer instead
+        this.studentId = studentId;
+        var studentName= name;//is perfectly fine, but it is not recommended to use var for local variables, use String instead
+    }
+     */
 }

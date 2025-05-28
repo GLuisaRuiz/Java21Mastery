@@ -3,6 +3,7 @@ package org.example;
 import java.util.Scanner;
 
 public class Main {
+    //var message = "Hello, World!"; // This line will cause a compile-time error because 'var' cannot be used at the class level
     public static void main(String[] args) {
  /*
         //Variable types
@@ -268,6 +269,14 @@ public class Main {
 
  */
 
+        /*---------------VAR key word---------------- */
+        //The var keyword was introduced in Java 10 and allows you to declare a variable without specifying its type.
+
+        var name = "Luisa"; // The var keyword infers the type of the variable is String based on the assigned value
+        //name = 20; // This will cause a compile-time error because the type of name is inferred as String, and you cannot assign an int to a String variable
+        //var age; // This will cause a compile-time error because the var keyword requires an initializer to infer the type
+
+        System.out.println(name.contains("is"));// Output: true, var keyword infers the type of the variable based on the assigned value
 
 
 
