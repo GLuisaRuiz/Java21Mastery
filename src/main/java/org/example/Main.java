@@ -219,6 +219,7 @@ public class Main {
 
  */
         /*---------------NESTED LOOP---------------- */
+        /*
         System.out.println("Nested loop" );
         String [][] fruits = {{"mango", "apple"},{"banana", "orange","berry"}};
         Integer [][] twoD = new Integer[2][3]; // 2 rows and 3 columns
@@ -234,6 +235,39 @@ public class Main {
         }
 
         System.out.println("I am outside of nested loop" );
+         */
+
+        /*---------------STRINGS---------------- */
+
+        String name = "Luisa";
+        System.out.println(2+3+name); // Output: 5Luisa, Java evaluates the expression from left to right
+        System.out.println(name+2+3); // Output: Luisa23, Java evaluates the expression from left to right
+
+        System.out.println(name.charAt(1)); // Output: u, charAt method returns the character at the specified index
+        System.out.println(name.indexOf("s")); // Output: 3, indexOf method returns the index of the first occurrence of the specified character
+        System.out.println(name.indexOf("l",3)); // Output: -1, indexOf method returns -1 if the character is not found after the specified index
+        System.out.println(name.indexOf("s",3)); // Output: 3, indexOf method returns the index of the first occurrence of the specified character after the specified index
+        System.out.println(name.substring(1,3)); // Output: ui, substring method returns the substring from the specified start index to the specified end index (exclusive)
+        System.out.println(name.toLowerCase()); // Output: luisa, toLowerCase method returns the string in lowercase
+        System.out.println(name.toUpperCase()); // Output: LUISA toUpperCase method returns the string in uppercase
+
+
+        String name2 = "Luisa";
+        String name3 = "Luisa     ";
+        String name4 = new String("Luisa");
+        System.out.println(name.equals(name2)); // Output: true, equals method compares the two strings for equality
+        System.out.println(name==name2); // Output: true, == operator compares the two strings for reference equality
+        System.out.println(name3.trim()); // Output: Luisa, trim method removes the leading and trailing whitespace from the string
+        System.out.println(name.equals(name4)); // Output: true, equals method compares the two strings for equality
+        System.out.println(name==name4); // Output: false, == operator compares the two strings for reference equality, name4 is a new object in memory
+
+        System.out.println(name.startsWith("L")); // Output: true, startsWith method checks if the string starts with the specified prefix
+        System.out.println(name.startsWith("l")); // Output: false, sensitive for lowcase or uppercase
+        System.out.println(name.contains("ui")); // Output: true, contains method checks if the string contains the specified sequence of characters
+        System.out.println(name.contains("za")); // Output: false, contains method checks if the string contains the specified sequence of characters
+
+
+
 
 
 
