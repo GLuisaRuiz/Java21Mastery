@@ -158,7 +158,7 @@ public class Main {
         System.out.println(fruits[1].length);
 */
         /*---------------LOOPS---------------- */
-
+/*
         //WHILE LOOP
         int index = 0;
         String [] fruits = {"mango", "apple","banana", "orange","berry"};
@@ -190,7 +190,54 @@ public class Main {
         }
         System.out.println("I am outside for each loop" );
 
-        /*---------------XXXXX---------------- */
+ */
+        /*---------------Break and continue statement---------------- */
+        // Break statement stops the execution of the loop
+/*
+        System.out.println("BREAK" );
+        String [] fruits = {"mango", "apple","banana", "orange","berry"};
+        boolean val = false;
+        for(String fruit : fruits) {
+            if (val){
+                break;
+            }
+            if (fruit.equals("banana")) {
+                System.out.println("Found banana, breaking the loop");
+                val = true;
+            }
+            System.out.println("The value of fruit arrray is: " + fruit);
+        }
+
+        // Continue statement just break a one interation of the loop
+        System.out.println("Continue" );
+        for(String fruit : fruits) {
+            if (fruit== "banana") {
+                continue; // Skip the current iteration when fruit is banana
+            }
+            System.out.println("The value of fruit arrray is: " + fruit);
+        }
+
+ */
+        /*---------------NESTED LOOP---------------- */
+        System.out.println("Nested loop" );
+        String [][] fruits = {{"mango", "apple"},{"banana", "orange","berry"}};
+        Integer [][] twoD = new Integer[2][3]; // 2 rows and 3 columns
+        int [] test = new int[5]; // 1D array of size 5
+
+        boolean val = true;
+        for(int i=0; i < fruits.length; i++) {
+            String [] singleDim = fruits[i];
+            for(int j=0; j < singleDim.length; j++) {
+                String fruit = singleDim[j];
+                System.out.println("The value of fruit arrray is: " + fruits[i][j]);
+            }
+        }
+
+        System.out.println("I am outside of nested loop" );
+
+
+
+
     }
 
 }
