@@ -289,7 +289,7 @@ public class Main {
          */
 
         /*----------------DATE TIME API--------------- */
-
+/*
         LocalDate date = LocalDate.of(2023, 10, 1 );// Year, Month, Day
         System.out.println(date); // Output: 2023-10-01
         System.out.println(date.minusDays(2)); // Output: 2023-09-29,
@@ -313,6 +313,15 @@ public class Main {
 
         Period period = Period.ofDays(5);
         System.out.println(period);
+ */
+
+        /*---------------FINAL keyword---------------- */
+
+        final int x = 10; // The value of x cannot be changed
+        //x = 20; // This will cause a compile-time error because x is declared as final
+        System.out.println(x);
+
+
 
 
 
@@ -322,12 +331,6 @@ public class Main {
         /*---------------VAR key word---------------- */
 
         /*---------------VAR key word---------------- */
-
-        /*---------------VAR key word---------------- */
-
-
-
-
 
     }
 

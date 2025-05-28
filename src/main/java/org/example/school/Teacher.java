@@ -1,6 +1,9 @@
 package org.example.school;
 
-public class Teacher {
+import org.example.pojo.Employee;
+
+//if employee class is final, we cannot extend it, so Teacher class cannot extend Employee class
+public class Teacher extends Employee {
 
     //teacheName is public and can be accessed from other packages and classes
     //if we change it to protected, it will not be accessible from other packages, library package have a problem.
@@ -13,4 +16,9 @@ public class Teacher {
         this.lastName = lastName;
         this.email = email;
     }
+
+    final void testFinal() {
+        // This method cannot be overridden in subclasses
+    }
+
 }
