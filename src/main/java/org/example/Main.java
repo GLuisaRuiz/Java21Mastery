@@ -238,7 +238,7 @@ public class Main {
          */
 
         /*---------------STRINGS---------------- */
-
+/*
         String name = "Luisa";
         System.out.println(2+3+name); // Output: 5Luisa, Java evaluates the expression from left to right
         System.out.println(name+2+3); // Output: Luisa23, Java evaluates the expression from left to right
@@ -265,6 +265,8 @@ public class Main {
         System.out.println(name.startsWith("l")); // Output: false, sensitive for lowcase or uppercase
         System.out.println(name.contains("ui")); // Output: true, contains method checks if the string contains the specified sequence of characters
         System.out.println(name.contains("za")); // Output: false, contains method checks if the string contains the specified sequence of characters
+
+ */
 
 
 
