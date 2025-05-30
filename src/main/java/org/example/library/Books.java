@@ -1,6 +1,6 @@
 package org.example.library;
 
-import org.example.school.Teacher;
+import org.example.oldschool.Teacher;
 
 public class Books {
     public Integer bookId;

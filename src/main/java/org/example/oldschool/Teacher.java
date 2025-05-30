@@ -1,4 +1,4 @@
-package org.example.school;
+package org.example.oldschool;
 
 import org.example.pojo.Employee;
 

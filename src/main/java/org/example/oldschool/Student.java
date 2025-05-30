@@ -1,4 +1,4 @@
-package org.example.school;
+package org.example.oldschool;
 
 public class Student {
     public Integer studentId;
