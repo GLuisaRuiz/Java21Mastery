@@ -9,6 +9,7 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Scanner;
 import org.example.pojo.Employee;
+import org.example.pojo.NonTeachingStaff;
 import org.example.pojo.Teacher;
 
 public class Main {
@@ -324,7 +325,9 @@ public class Main {
         System.out.println(x);
 
  */
+
         /*---------------SINGLE INHERITANCE ---------------- */
+         /*
         Teacher teacher =  new Teacher();
         teacher.setSchoolName("ABC High School");
         teacher.setSchoolId("SHS123");
@@ -334,8 +337,18 @@ public class Main {
 
         System.out.println("School: " + teacher.getSchoolName()+ ", Subject: " + teacher.getTeachingSubject());
 
+        */
+        /*---------------Hierarchical inheritance---------------- */
 
-        /*---------------VAR key word---------------- */
+        NonTeachingStaff nonTeachingStaff = new NonTeachingStaff();
+        nonTeachingStaff.setRole("Receptionist");
+        nonTeachingStaff.setSchoolName("ABC High School");
+        nonTeachingStaff.setSchoolId("SHS123");
+        nonTeachingStaff.setEmployeeId(112);
+        nonTeachingStaff.setEmployeeName("Jhon");
+
+        System.out.println("School: " + nonTeachingStaff.getSchoolName()+ ", Role: " + nonTeachingStaff.getRole());
+
 
         /*---------------VAR key word---------------- */
 
