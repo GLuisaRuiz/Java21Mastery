@@ -9,6 +9,7 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Scanner;
 import org.example.pojo.Employee;
+import org.example.pojo.Teacher;
 
 public class Main {
     //var message = "Hello, World!"; // This line will cause a compile-time error because 'var' cannot be used at the class level
@@ -324,13 +325,14 @@ public class Main {
 
  */
         /*---------------SINGLE INHERITANCE ---------------- */
-        Employee emp =  new Employee();
-        emp.setSchoolName("ABC High School");
-        emp.setSchoolId("SHS123");
-        emp.setEmployeeId(112);
-        emp.setEmployeeName("Jhon");
+        Teacher teacher =  new Teacher();
+        teacher.setSchoolName("ABC High School");
+        teacher.setSchoolId("SHS123");
+        teacher.setEmployeeId(112);
+        teacher.setEmployeeName("Jhon");
+        teacher.setTeachingSubject("math");
 
-        System.out.println(emp.getSchoolName());
+        System.out.println("School: " + teacher.getSchoolName()+ ", Subject: " + teacher.getTeachingSubject());
 
 
         /*---------------VAR key word---------------- */

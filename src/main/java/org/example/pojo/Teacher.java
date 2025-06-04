@@ -1,22 +1,15 @@
 package org.example.pojo;
 
-public class Teacher {
-    private String teacherName;
-    private Integer teacherId;
+//Multi-level inheritance example
+//Teacher class extends Employee class and Employee class extends School class
+public class Teacher extends Employee{
+   private String teachingSubject;
 
-    public String getTeacherName() {
-        return teacherName;
+    public String getTeachingSubject() {
+        return teachingSubject;
     }
 
-    public void setTeacherName(String teacherName) {
-        this.teacherName = teacherName;
-    }
-
-    public Integer getTeacherId() {
-        return teacherId;
-    }
-
-    public void setTeacherId(Integer teacherId) {
-        this.teacherId = teacherId;
+    public void setTeachingSubject(String teachingSubject) {
+        this.teachingSubject = teachingSubject;
     }
 }
