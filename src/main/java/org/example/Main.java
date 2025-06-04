@@ -8,6 +8,7 @@ import java.time.Period;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Scanner;
+import org.example.pojo.Employee;
 
 public class Main {
     //var message = "Hello, World!"; // This line will cause a compile-time error because 'var' cannot be used at the class level
@@ -316,17 +317,21 @@ public class Main {
  */
 
         /*---------------FINAL keyword---------------- */
-
+/*
         final int x = 10; // The value of x cannot be changed
         //x = 20; // This will cause a compile-time error because x is declared as final
         System.out.println(x);
 
+ */
+        /*---------------SINGLE INHERITANCE ---------------- */
+        Employee emp =  new Employee();
+        emp.setSchoolName("ABC High School");
+        emp.setSchoolId("SHS123");
+        emp.setEmployeeId(112);
+        emp.setEmployeeName("Jhon");
 
+        System.out.println(emp.getSchoolName());
 
-
-
-
-        /*---------------VAR key word---------------- */
 
         /*---------------VAR key word---------------- */
 
