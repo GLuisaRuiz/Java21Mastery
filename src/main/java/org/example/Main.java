@@ -339,7 +339,7 @@ public class Main {
 
         */
         /*---------------Hierarchical inheritance---------------- */
-
+/*
         NonTeachingStaff nonTeachingStaff = new NonTeachingStaff();
         nonTeachingStaff.setRole("Receptionist");
         nonTeachingStaff.setSchoolName("ABC High School");
@@ -348,9 +348,16 @@ public class Main {
         nonTeachingStaff.setEmployeeName("Jhon");
 
         System.out.println("School: " + nonTeachingStaff.getSchoolName()+ ", Role: " + nonTeachingStaff.getRole());
+ */
+
+        /*---------------Multiple inheritance---------------- */
+        //it's not supported in Java, but you can achieve it using interfaces
 
 
-        /*---------------VAR key word---------------- */
+
+
+
+
 
     }
 
