@@ -374,6 +374,8 @@ public class Main {
          NonTeachingStaff nonTeachingStaff = new NonTeachingStaff();
          nonTeachingStaff.workHour();
 
+         employee = teacher;
+         employee.workHour();
 
 
     }
