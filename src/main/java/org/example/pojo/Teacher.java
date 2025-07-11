@@ -13,6 +13,7 @@ public class Teacher extends Employee{
         this.teachingSubject = teachingSubject;
     }
 
+    @Override //Commonly used annotation to indicate that this method overrides a method in the superclass
     // Overriding the workHour method from Employee class
     public void workHour(){
         System.out.println("Teacher works 6 hours a day");
