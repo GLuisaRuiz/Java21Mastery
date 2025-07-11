@@ -11,6 +11,7 @@ import java.util.Scanner;
 import org.example.calculator.Calculator;
 import org.example.pojo.Employee;
 import org.example.pojo.NonTeachingStaff;
+import org.example.pojo.SchoolAdmin;
 import org.example.pojo.Teacher;
 
 public class Main {
@@ -376,6 +377,12 @@ public class Main {
 
          employee = teacher;
          employee.workHour();
+
+        Employee emp1 = new Teacher();
+        emp1.workHour();
+
+        SchoolAdmin schoolAdmin = new SchoolAdmin();
+        schoolAdmin.printWorkHours(emp1); // Calls Teacher's workHour method
 
 
     }
