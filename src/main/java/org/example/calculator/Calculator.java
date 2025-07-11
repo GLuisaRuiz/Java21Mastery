@@ -1,23 +1,29 @@
 package org.example.calculator;
 
 public class Calculator {
-    int firstNumber;
-    int secondNumber;
 
-    public int add() {
-        return this.firstNumber + this.secondNumber;
+    public Calculator() {
+        System.out.println("No args constructor");
+    }
+    public Calculator(int i) {
+        System.out.println("int arg constructor");
+    }
+    public Calculator(double i) {
+        System.out.println("Double arg constructor");
     }
 
-    public int add1(int value1, int value2) {
-        return value1 + value2;
+    public static int add(int a, int b) {
+        System.out.println("2 int args");
+        return a + b;
     }
 
-    public int add2(int value2) {
-        return this.firstNumber + value2;
+    public static int add(double a, int b) {
+        System.out.println("double and int args");
+        return (int) (a + b);
     }
 
-    //Static methods
-    public static int addStatic(int value1, int value2) {
-        return value1 + value2;
+    public static int add(int a, int b,int c) {
+        System.out.println("3 int args");
+        return (a + b + c);
     }
 }

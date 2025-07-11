@@ -12,4 +12,9 @@ public class Teacher extends Employee{
     public void setTeachingSubject(String teachingSubject) {
         this.teachingSubject = teachingSubject;
     }
+
+    // Overriding the workHour method from Employee class
+    public void workHour(){
+        System.out.println("Teacher works 6 hours a day");
+    }
 }

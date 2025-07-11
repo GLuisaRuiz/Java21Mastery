@@ -28,4 +28,8 @@ public class Employee extends School{
     public void setEmployeeName(String employeeName) {
         this.employeeName = employeeName;
     }
+
+    public void workHour(){
+        System.out.println("Employee works 8 hours a day");
+    }
 }

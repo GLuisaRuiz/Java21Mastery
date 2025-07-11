@@ -8,6 +8,7 @@ import java.time.Period;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Scanner;
+import org.example.calculator.Calculator;
 import org.example.pojo.Employee;
 import org.example.pojo.NonTeachingStaff;
 import org.example.pojo.Teacher;
@@ -353,9 +354,25 @@ public class Main {
         /*---------------Multiple inheritance---------------- */
         //it's not supported in Java, but you can achieve it using interfaces
 
+        /*---------------Polymorphism---------------- */
+        //Compile-time polymorphism (Method Overloading)
 
+        //Calculator calculator = new  Calculator();
+        Calculator calculator = new  Calculator(2); // Calls the constructor with an int parameter
+        Calculator calculator1 = new  Calculator(2.5); // Calls the constructor with a double parameter
+        System.out.println(calculator.add(5, 10)); // Calls the method with two int parameters
+        System.out.println(calculator.add(5.5, 10)); // Calls the method with double and int parameters
+        System.out.println(calculator.add(5, 10, 15)); // Calls the method with three int parameters
 
+        //Runtime polymorphism (Method Overriding)
+        Employee employee = new Employee();
+         employee.workHour();
 
+         Teacher teacher = new Teacher();
+         teacher.workHour();
+
+         NonTeachingStaff nonTeachingStaff = new NonTeachingStaff();
+         nonTeachingStaff.workHour();
 
 
 
