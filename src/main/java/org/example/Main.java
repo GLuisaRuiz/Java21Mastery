@@ -8,6 +8,11 @@ import java.time.Period;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.util.Scanner;
+import org.example.abstractexample.Circle;
+import org.example.abstractexample.Rectangle;
+import org.example.abstractexample.Shape;
+import org.example.abstractexample.ShapeUtility;
+import org.example.abstractexample.Trapezoid;
 import org.example.calculator.Calculator;
 import org.example.pojo.Employee;
 import org.example.pojo.NonTeachingStaff;
@@ -357,7 +362,7 @@ public class Main {
 
         /*---------------Polymorphism---------------- */
         //Compile-time polymorphism (Method Overloading)
-
+/*
         //Calculator calculator = new  Calculator();
         Calculator calculator = new  Calculator(2); // Calls the constructor with an int parameter
         Calculator calculator1 = new  Calculator(2.5); // Calls the constructor with a double parameter
@@ -383,6 +388,31 @@ public class Main {
 
         SchoolAdmin schoolAdmin = new SchoolAdmin();
         schoolAdmin.printWorkHours(emp1); // Calls Teacher's workHour method
+
+
+ */
+
+        /*---------------Abstract class---------------- */
+        Shape shape1 = new Circle(3.5);
+        Shape shape2 = new Rectangle(3.0, 5.5);
+        Shape shape3 = new Trapezoid(4.0, 6.0, 5.0);
+
+        System.out.println("Area of Circle: " + shape1.calculateArea());
+        System.out.println("Area of Rectangle: " + shape2.calculateArea());
+        System.out.println("Area of Trapezoid: " + shape3.calculateArea());
+
+        ShapeUtility util = new ShapeUtility();
+
+        util.calculateArea(shape1);
+        util.calculateArea(shape2);
+        util.calculateArea(shape3);
+
+
+
+        /*---------------Polymorphism---------------- */
+
+
+        /*---------------Polymorphism---------------- */
 
 
     }
