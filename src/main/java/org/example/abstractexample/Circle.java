@@ -1,6 +1,8 @@
 package org.example.abstractexample;
 
-public class Circle extends  Shape{
+import org.example.interfaces.IShape;
+
+public class Circle implements IShape {
 
     private double radius;
 
@@ -9,7 +11,12 @@ public class Circle extends  Shape{
     }
 
     @Override
-    public double calculateArea() {
-        return Math.PI*radius*radius;
+    public double getArea() {
+        return Math.PI* radius * radius;
+    }
+
+    @Override
+    public void printName() {
+        System.out.println("Circle");
     }
 }

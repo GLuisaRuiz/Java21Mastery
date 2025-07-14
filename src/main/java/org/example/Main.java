@@ -14,6 +14,7 @@ import org.example.abstractexample.Shape;
 import org.example.abstractexample.ShapeUtility;
 import org.example.abstractexample.Trapezoid;
 import org.example.calculator.Calculator;
+import org.example.interfaces.IShape;
 import org.example.pojo.Employee;
 import org.example.pojo.NonTeachingStaff;
 import org.example.pojo.SchoolAdmin;
@@ -392,22 +393,26 @@ public class Main {
 
  */
 
-        /*---------------Abstract class---------------- */
-        Shape shape1 = new Circle(3.5);
+        /*---------------Abstract class and Interface---------------- */
+        IShape shape1 = new Circle(3.5);
         Shape shape2 = new Rectangle(3.0, 5.5);
+        IShape shape22 = new Rectangle(3.0, 5.5);
         Shape shape3 = new Trapezoid(4.0, 6.0, 5.0);
 
-        System.out.println("Area of Circle: " + shape1.calculateArea());
+        System.out.println("Area of Circle: " + shape1.getArea());
         System.out.println("Area of Rectangle: " + shape2.calculateArea());
         System.out.println("Area of Trapezoid: " + shape3.calculateArea());
 
         ShapeUtility util = new ShapeUtility();
-
-        util.calculateArea(shape1);
+        shape1.printName();
+        util.getArea(shape1);
+        shape22.printName();
+        util.getArea(shape22);
         util.calculateArea(shape2);
         util.calculateArea(shape3);
 
-
+        System.out.println(shape1.NAME); // Accessing the static variable from the interface
+        System.out.println(shape1.getConstValue()); // Accessing the defult method from the interface
 
         /*---------------Polymorphism---------------- */
 

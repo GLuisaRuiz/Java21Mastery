@@ -1,6 +1,8 @@
 package org.example.abstractexample;
 
-public class Rectangle extends  Shape{
+import org.example.interfaces.IShape;
+
+public class Rectangle extends  Shape implements IShape {
 
     private double height;
     private double base;
@@ -13,5 +15,15 @@ public class Rectangle extends  Shape{
     @Override
     public double calculateArea() {
         return base*height;
+    }
+
+    @Override
+    public double getArea() {
+        return  base*height;
+    }
+
+    @Override
+    public void printName() {
+        System.out.println("Rectangle");
     }
 }
